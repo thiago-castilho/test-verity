@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: br.com.verity.runner.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 63.921 sec <<< FAILURE!
+Contact Verity Group(Contact Verity Group)  Time elapsed: 62.649 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on ANY (eb0c60d7e6b90386195678f108d16e6a)] -> xpath: //button[@class='submit']] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'NB63629', ip: '10.96.159.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}), userDataDir=C:\Users\ccj0945\AppData\Local\Temp\scoped_dir14760_14148}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60210}, acceptInsecureCerts=false, browserVersion=75.0.3770.142, browserName=chrome, javascriptEnabled=true, platformName=windows nt, setWindowRect=true}]
+Session ID: eb0c60d7e6b90386195678f108d16e6a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at br.com.verity.core.WaitHelper.waitElementClickable(WaitHelper.java:18)
+	at br.com.verity.gherkin.steps.ContactVerityGroup.click_the_button(ContactVerityGroup.java:46)
+	at ?.click the "Enviar" button(file:features/contact_verity.feature:10)
+

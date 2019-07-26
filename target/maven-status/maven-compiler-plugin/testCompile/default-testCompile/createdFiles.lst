@@ -1,0 +1,5 @@
+br\com\verity\gherkin\pages\MenuPage.class
+br\com\verity\gherkin\pages\ContactPage.class
+br\com\verity\gherkin\hooks\Hooks.class
+br\com\verity\runner\RunCucumberTest.class
+br\com\verity\gherkin\steps\ContactVerityGroup.class
