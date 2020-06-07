@@ -78,12 +78,13 @@
 								<goal>generate</goal>
 							</goals>
 							<configuration>
-								<projectName>test-verity</projectName>
+								<testFailureIgnore>true</testFailureIgnore>	
+								<projectName>${project.artifactId}</projectName>
 								<outpuDirectory>${project.build.directory}/cucumber-jvm-reports</outpuDirectory>
 								<cucumberDirectory>${project.build.directory}/cucumber.json</cucumberDirectory>
 								<skippedFails>true</skippedFails>
 								<enableFlahsCharts>true</enableFlahsCharts>
-								<buildNumber>1</buildNumber>
+								<buildNumber>${project.version}</buildNumber>
 							</configuration>
 						</execution>
 					</executions>

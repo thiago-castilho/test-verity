@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty", "json:target/cucumber.json"},
+@CucumberOptions(plugin = {"pretty", "json:target/cucumber.json", "html:target/cucumber-simple-report"},
 				 glue = "br/com/verity/gherkin",
 				 features = "features")
 public class RunCucumberTest {}
